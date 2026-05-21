@@ -13,13 +13,15 @@
 </head>
 <body>
 	<div>
-		<p> id="js1">按下按鈕在此顯示學號, 姓名, 和時間</p>
-		<button type="button" onclick="document.getElementById('js1').innerHTML = '41318420 薛正明 </br>'+Date()">點選顯示時間</button>
+		<p id="js1">按下按鈕在此顯示學號, 姓名, 和時間</p>
+		<!-- 修正：將 </br> 改為 <br> -->
+		<button type="button" onclick="document.getElementById('js1').innerHTML = '41318420 薛正明 <br>'+Date()">點選顯示時間</button>
 	</div>
 	<hr>
 	<div>
-	<img id="pic" src="welcome.jpg" width="50%">
-	<p id="js2">按下按鈕2或3顯示日出或日落圖片</p>
+		<!-- 修正：補上 alt 屬性 -->
+		<img id="pic" src="welcome.jpg" alt="主頁圖片" width="50%">
+		<p id="js2">按下按鈕2或3顯示日出或日落圖片</p>
 		<button type="button" onclick="document.getElementById('pic').src='sunrise.jpg'">按鈕2：顯示日出</button>
 		<button type="button" onclick="document.getElementById('pic').src='sunset.jpg'">按鈕3：顯示日落</button>
 	</div>
